@@ -12,11 +12,11 @@
 
     <form action="proses.php" method="post">
         <center>
-        <table style="background-color: #FFDFDF">
+        <table style="background-color: #FFDFDF" width=100%>
             <tr>
-                <td><img src="" alt=""></td>
-                <td><img src="" alt=""></td>
-                <td><img src="" alt=""></td>
+                <td style="background-color: #38B6FF"><img src="foto/1.png" width="281px" height="430px"></td>
+                <td style="background-color: #38B6FF"><img src="foto/2.png" width="281px" height="430px"></td>
+                <td style="background-color: #38B6FF"><img src="foto/3.png" width="281px" height="430px"></td>
             </tr>
             <tr>
                 <td><button type="submit" class="btn btn-primary" name="submit_1">Vote!</button></td>
