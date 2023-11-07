@@ -15,11 +15,10 @@ $jurusan = mysqli_query($conn, "SELECT * FROM tb_presentase_jurusan");
 
 ?>
     <form action="pilih.php" method="post">
-        <h1>Pilih Nomor Bilik</h1>
         <select name="pilih_bilik">
             <?php foreach ($jurusan as $key) : ?>
             <option value="<?$key["jurusan"]?>"></option>
-            <?php endforeach?>
+            <?php endforeach;?>
             <option value=""></option>
         </select>
     </form>
