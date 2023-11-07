@@ -3,7 +3,8 @@ $host="localhost";
 $user="root";
 $pass="";
 $database="db_pemilos";
-$conn = new mysqli($host, $user, $pass, $database);
+$database1="db_data_siswa";
+$conn = new mysqli($host, $user, $pass, $database, $database1);
 if ($conn->connect_error) {
     echo "Gagal koneksi ke database";
 } 

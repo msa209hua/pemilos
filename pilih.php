@@ -7,11 +7,12 @@
     <title>Document</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #38B6FF>
     <script src="bootstrap/js/bootstrap.js"></script>
 
     <form action="proses.php" method="post">
-        <table>
+        <center>
+        <table style="background-color: #FFDFDF">
             <tr>
                 <td><img src="" alt=""></td>
                 <td><img src="" alt=""></td>
@@ -23,6 +24,7 @@
                 <td><button type="submit" class="btn btn-primary" name="submit_3">Vote!</button></td>
             </tr>
         </table>
+        </center>
     </form>
 </body>
 </html>
