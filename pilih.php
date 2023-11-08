@@ -12,16 +12,21 @@
 
     <form action="proses.php" method="post">
         <center>
-        <table style="background-color: #FFDFDF" width=100%>
+        <table>
             <tr>
-                <td style="background-color: #38B6FF"></td>
-                <td style="background-color: #38B6FF"></td>
-                <td style="background-color: #38B6FF"></td>
+                <td style="width: 35%;"><img src="foto/Capture.png" style="border: 10px solid skyblue;" alt=""></td>
+                <td style="width: 35%;"><img src="foto/Capture.png" style="border: 10px solid skyblue;"></td>
+                <td style="width: 35%;"><img src="foto/Capture.png" style="border: 10px solid skyblue;"></td>
             </tr>
             <tr>
-                <td><button type="submit" class="btn btn-primary" name="submit_1">Vote!</button></td>
-                <td><button type="submit" class="btn btn-primary" name="submit_2">Vote!</button></td>
-                <td><button type="submit" class="btn btn-primary" name="submit_3">Vote!</button></td>
+                <td><h3 style="margin-left: 40px; border:">NAMA</h3></td>
+                <td><h3 style="margin-left: 40px; border:">NAMA</h3></td>
+                <td><h3 style="margin-left: 40px; border:">NAMA</h3></td>
+            </tr>
+            <tr>
+                <td><button type="submit" class="btn btn-primary" name="submit_1" style="margin-left: 55px;">Vote!</button></td>
+                <td><button type="submit" class="btn btn-primary" name="submit_2" style="margin-left: 55px;">Vote!</button></td>
+                <td><button type="submit" class="btn btn-primary" name="submit_3" style="margin-left: 55px;">Vote!</button></td>
             </tr>
         </table>
         </center>
