@@ -14,9 +14,9 @@
         <center>
         <table style="background-color: #FFDFDF" width=100%>
             <tr>
-                <td style="background-color: #38B6FF"><img src="foto/1.png" width="281px" height="430px"></td>
-                <td style="background-color: #38B6FF"><img src="foto/2.png" width="281px" height="430px"></td>
-                <td style="background-color: #38B6FF"><img src="foto/3.png" width="281px" height="430px"></td>
+                <td style="background-color: #38B6FF"></td>
+                <td style="background-color: #38B6FF"></td>
+                <td style="background-color: #38B6FF"></td>
             </tr>
             <tr>
                 <td><button type="submit" class="btn btn-primary" name="submit_1">Vote!</button></td>
