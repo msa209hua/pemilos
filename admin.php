@@ -9,7 +9,7 @@
 <body>
 <?php
     include "koneksi2.php";
-    $sql=mysqli_query($conn, "SELECT * FROM db_data_siswa");
+    $sql=mysqli_query($conn, "SELECT * FROM data_siswa");
     ?>
     <table border="1px" collspacing="0" collpadding="15px" width="70%">
         <tr>
