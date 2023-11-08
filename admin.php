@@ -24,7 +24,15 @@
                     <td><?= $row["nama"];?></td>
                     <td><?= $row["kelas"];?></td>
                     <td>
-                        <a href="#"><?= $row["aksi"]?></a></td>
+                        <form action="admin.php" method="POST">
+                            <?php $aksi="antri"?>
+                            <input type="submit" value="" name="submit">
+                            <?php
+                            if (isset($_POST['submit'])) {
+                                
+                            }
+                            ?>
+                        </form>
         </tr>
         <?php endforeach;?>
     </table>
