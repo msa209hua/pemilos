@@ -8,15 +8,15 @@
 </head>
 <body>
 <?php
-    include "koneksi.php";
+    include "koneksi2.php";
     $sql=mysqli_query($conn, "SELECT * FROM db_data_siswa");
     ?>
     <table border="1px" collspacing="0" collpadding="15px">
         <tr>
-            <th>id_pelanggan</th>
-            <th>Nama Pelanggan</th>
-            <th>Alamat</th>
-            <th>No Telepon</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Aksi</th>
         </tr>
         <?php foreach ($sql as $row) : ?>
         <tr align="center">
