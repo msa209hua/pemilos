@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Nov 2023 pada 09.26
+-- Waktu pembuatan: 08 Nov 2023 pada 08.31
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
@@ -33,6 +33,15 @@ CREATE TABLE `data_siswa` (
   `kelas` varchar(25) NOT NULL,
   `aksi` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `data_siswa`
+--
+
+INSERT INTO `data_siswa` (`NIS`, `nama`, `kelas`, `aksi`) VALUES
+(111111111, 'Figuran A', 'XI RPL A', 'Antri'),
+(222222222, 'Figuran B', 'XI RPL A', 'Antri'),
+(333333333, 'Figuran C', 'XI RPL A', 'Antri');
 
 --
 -- Indexes for dumped tables
