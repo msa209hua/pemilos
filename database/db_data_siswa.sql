@@ -41,7 +41,7 @@ CREATE TABLE `data_siswa` (
 INSERT INTO `data_siswa` (`NIS`, `nama`, `kelas`, `aksi`) VALUES
 (111111111, 'Figuran A', 'XI RPL A', 'Antri'),
 (222222222, 'Figuran B', 'XI RPL A', 'Antri'),
-(333333333, 'Figuran C', 'XI RPL A', 'Antri');
+(333333333, 'Figuran C', 'XI RPL A', 'Antri') ;
 
 --
 -- Indexes for dumped tables
