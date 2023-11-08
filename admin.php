@@ -11,7 +11,7 @@
     include "koneksi2.php";
     $sql=mysqli_query($conn, "SELECT * FROM db_data_siswa");
     ?>
-    <table border="1px" collspacing="0" collpadding="15px">
+    <table border="1px" collspacing="0" collpadding="15px" width="70%">
         <tr>
             <th>NIS</th>
             <th>Nama</th>
@@ -24,9 +24,7 @@
                     <td><?= $row["nama"];?></td>
                     <td><?= $row["kelas"];?></td>
                     <td>
-                        <?php echo "
-                        <a href='Tanszah_pelangganEdit.php?id=$row[id_pelanggan]'>Edit</a>|"?>
-                        <a href="Tanszah_pelangganHapus.php?id=<?=$row['id_pelanggan'];?>"onclick="return confirm ('Yakin mau hapus?');">Hapus</a></td>
+                        <a href="#"><?= $row["aksi"]?></a></td>
         </tr>
         <?php endforeach;?>
     </table>
