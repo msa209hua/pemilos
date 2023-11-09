@@ -2,7 +2,7 @@
 include "koneksi.php";
 $sql = mysqli_query($conn, "SELECT * FROM tb_pemilihan");
 
-if (isset($_POST['submit_1'])) {
+if (isset($_POST['submit-1'])) {
     $tambah_sql = mysqli_query($conn, "UPDATE tb_pemilihan SET hasil_vote = hasil_vote + 1 WHERE no = 1");
     echo "
     <script>
@@ -11,7 +11,7 @@ if (isset($_POST['submit_1'])) {
     </script>
     ";
 }
-else if (isset($_POST['submit_2'])) {
+else if (isset($_POST['submit-2'])) {
     $tambah_sql = mysqli_query($conn, "UPDATE tb_pemilihan SET hasil_vote = hasil_vote + 1 WHERE no = 2");
     echo "
     <script>
@@ -20,7 +20,7 @@ else if (isset($_POST['submit_2'])) {
     </script>
     ";
 }
-else if (isset($_POST['submit_3'])) {
+else if (isset($_POST['submit-3'])) {
     $tambah_sql = mysqli_query($conn, "UPDATE tb_pemilihan SET hasil_vote = hasil_vote + 1 WHERE no = 3");
     echo "
     <script>
