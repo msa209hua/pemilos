@@ -9,7 +9,8 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style>
         body {
-            background-color: skyblue;
+            background-image: url(foto/background-1.jpg);
+            background-size: cover;
         }
 
         .head {
@@ -18,15 +19,15 @@
             justify-content: center;
             text-align: center;
 
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
         .a,
         .b,
         .c {
             background-color: white;
-            border-radius: 20px;
-            padding: 10px;
+            border-radius: 10px;
+            padding: 5px;
         }
 
         .b {
@@ -40,8 +41,8 @@
 
             background-color: white;
             padding: 30px;
-            margin: 30px 0 30px 0;
-            border-radius: 20px;
+            margin: 40px 0 40px 0;
+            border-radius: 30px;
         }
 
         .c-two {
@@ -56,13 +57,13 @@
         <div class="container">
             <div class="head">
                 <div class="col-2 a">
-                    <h3>NOMOR BILIK</h3>
+                    <h4>NOMOR BILIK</h4>
                 </div>
                 <div class="col-4 b">
                     <h3>CALON KETUA/WAKIL OSIS</h3>
                 </div>
                 <div class="col-2 c">
-                    <h3>USERS</h3>
+                    <h4>USERS</h4>
                 </div>
             </div>
     
@@ -72,6 +73,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Number One</h5>
                         <p class="card-text">Fasya-Sahla</p>
+                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>1</b></p>
                         <input type="submit" value="VOTE!" name="submit-1" class="btn btn-primary">
                     </div>
                 </div>
@@ -80,6 +82,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Number Two</h5>
                         <p class="card-text">Endriana-Deni</p>
+                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>2</b></p>
                         <input type="submit" value="VOTE!" name="submit-2" class="btn btn-primary">
                     </div>
                 </div>
@@ -88,9 +91,13 @@
                     <div class="card-body">
                         <h5 class="card-title">Number Three</h5>
                         <p class="card-text">Tanszah-Cantika</p>
+                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>3</b></p>
                         <input type="submit" value="VOTE!" name="submit-3" class="btn btn-primary">
                     </div>
                 </div>
+            </div>
+            <div class="foot">
+                
             </div>
         </div>
     </form>
