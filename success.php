@@ -8,8 +8,8 @@
 </head>
 <body style="background-color: #00a9ff">
 <audio autoplay >
-  <source src="sound/tes notif.wav" type="audio/ogg">
-  <source src="sound/tes notif.wav" type="audio/mpeg">
+  <source src="sound/sticky.mp3" type="audio/ogg">
+  <source src="sound/sticky.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 </div>
