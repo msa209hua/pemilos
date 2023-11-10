@@ -7,7 +7,7 @@
     <title>Vote Success</title>
 </head>
 <body style="background-color: #00a9ff">
-<audio controls autoplay loop>
+<audio autoplay >
   <source src="sound/tes notif.wav" type="audio/ogg">
   <source src="sound/tes notif.wav" type="audio/mpeg">
 Your browser does not support the audio element.
