@@ -23,6 +23,8 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+h6 {color:orange;}
 </style>
 <?php
     include "koneksi2.php";
@@ -43,9 +45,9 @@ tr:nth-child(even) {
                     <td>
                         <form action="admin.php" method="POST">
                             <?php $aksi="antri"?>
-                            <input type="submit" value="" name="submit">
+                            <button type="submit" name="antri"><h6>Antri</h6></button>
                             <?php
-                            if (isset($_POST['submit'])) {
+                            if (isset($_POST['antri'])) {
                                 
                             }
                             ?>
