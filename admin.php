@@ -44,7 +44,6 @@ h6 {color:orange;}
                     <td><?= $row["kelas"];?></td>
                     <td>
                         <form action="admin.php" method="POST">
-                            <?php $aksi="antri"?>
                             <button type="submit" name="antri"><h6>Antri</h6></button>
                             <?php
                             if (isset($_POST['antri'])) {
