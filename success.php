@@ -16,15 +16,12 @@ Your browser does not support the audio element.
 </audio>
 <table align="right">
   <tr>
-    <td><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-<circle cx="35" cy="35" r="35" fill="black"/>
-</svg></td>
-<td><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-<circle cx="35" cy="35" r="35" fill="black"/>
-</svg></td>
-<td><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-<circle cx="35" cy="35" r="35" fill="black"/>
-</svg></td>
+    <td><img src="foto/smk.png"  width="70" height="70" viewBox="0 0 70 70" fill="none">
+<circle cx="35" cy="35" r="35"></td>
+<td><img src="foto/kesiswaan.png"  width="70" height="70" viewBox="0 0 70 70" fill="none">
+<circle cx="35" cy="35" r="35"></td>
+<td><img src="foto/osis.png"  width="70" height="70" viewBox="0 0 70 70" fill="none">
+<circle cx="35" cy="35" r="35"></td>
   </tr>
 </table>
     <center>
