@@ -18,7 +18,7 @@ button {
  border: 2px solid var(--color);
  transition: color .5s;
  z-index: 1;
- font-size: 17px;
+ font-size: 30px;
  border-radius: 6px;
  font-weight: 500;
  color: var(--color);
@@ -29,9 +29,9 @@ button:before {
  position: absolute;
  z-index: -1;
  background: var(--color);
- height: 150px;
- width: 200px;
- border-radius: 50%;
+ height: 500px;
+ width: 500px;
+ border-radius: 20%;
 }
 
 button:hover {
@@ -58,9 +58,9 @@ table{}
 </style>
 <body bgcolor="#00A9FF">
     <center>
-        <table align="center" border="4" bgcolor="white" width="70%" height="500px" style="margin-top : 120px; text-align: center;" >
+        <table align="center" bgcolor="white" width="70%" height="500px" style="margin-top : 120px; text-align: center; border-radius: 30px;">
     <tr>
-        <td><button>Masuk!</button></td>
+        <td><a href="pilih.php"><button>Masuk!</button></a></td>
     </tr>
         </table>
     </center>
