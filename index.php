@@ -53,10 +53,12 @@ button:active:before {
  background: #3a0ca3;
  transition: background 0s;
 }
+
+table{}
 </style>
 <body bgcolor="#00A9FF">
     <center>
-        <table border="4" bgcolor="white" width="70%" height="500px" style="margin-top : 120px">
+        <table align="center" border="4" bgcolor="white" width="70%" height="500px" style="margin-top : 120px; text-align: center;" >
     <tr>
         <td><button>Masuk!</button></td>
     </tr>
