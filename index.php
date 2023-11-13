@@ -81,7 +81,7 @@ table{}
         <td style="padding-bottom: 125px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
     </tr>
     <tr>
-        <td><b>(ikuti kata hatimu karena pilihan ada di kamu!)</b>
+        <td><b>(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>
     </tr>
         </table>
     </center>
