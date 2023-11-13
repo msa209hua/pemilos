@@ -85,9 +85,9 @@
         .book:hover .cover {
             -webkit-transition: all 0.5s;
             transition: all 0.5s;
-            -webkit-transform: rotatey(-80deg);
-            -ms-transform: rotatey(-80deg);
-            transform: rotatey(-80deg);
+            -webkit-transform: rotatey(-90deg);
+            -ms-transform: rotatey(-90deg);
+            transform: rotatey(-90deg);
         }
 
         .a,
@@ -158,7 +158,7 @@
             <div class="main">
                 <div class="card c-one" style="width: 18rem;">
                     <div class="book">
-                        <p>helow</p>
+                        <img src="foto/poster-1.jpg" style="width: 283px; heigth: 380px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="card c-two" style="width: 18rem;">
                     <div class="book">
-                        <p>helow</p>
+                        <img src="foto/poster-2.jpg" style="width: 283px; heigth: 380px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
@@ -192,7 +192,7 @@
                 </div>
                 <div class="card c-three" style="width: 18rem;">
                     <div class="book">
-                        <p>helow</p>
+                        <img src="foto/poster-3.png" style="width: 283px; heigth: 380px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
