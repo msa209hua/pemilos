@@ -7,6 +7,7 @@
 
 body {
   background-image: url('foto/backgroundhome2.jpg');
+  background-size: contain;
 }
 button {
  --color: #0000FF;
@@ -64,7 +65,7 @@ button:active:before {
     width: 100%;
     height: 40px;
     background-color: deepskyblue;
-    margin-top: 107px;
+    margin-top: 204px;
     font-weight: 700;
         }
 .foot p {

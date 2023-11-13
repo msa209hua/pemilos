@@ -10,7 +10,7 @@
     <style>
         body {
             background-image: url(foto/background.jpg);
-            background-size: contain;
+            background-size: cover;
         }
 
         .head {
@@ -25,7 +25,7 @@
         .book {
             position: relative;
             border-radius: 5px;
-            width: 283px;
+            width: 287px;
             height: 380px;
             background-color: whitesmoke;
             -webkit-transform: preserve-3d;
@@ -88,6 +88,7 @@
             -webkit-transform: rotatey(-90deg);
             -ms-transform: rotatey(-90deg);
             transform: rotatey(-90deg);
+            transition-delay: .1s;
         }
 
         .a,
@@ -107,7 +108,7 @@
             flex-direction: row;
             justify-content: center;
 
-            background-color: rgba(255, 255, 255, 0.808);
+            background-color: rgba(255, 255, 255, 0.85);
             padding: 30px;
             padding-top: 45px;
             margin: 40px 0 40px 0;
@@ -158,7 +159,7 @@
             <div class="main">
                 <div class="card c-one" style="width: 18rem;">
                     <div class="book">
-                        <img src="foto/poster-1.jpg" style="width: 283px; heigth: 380px; border-radius: 5px;">
+                        <img src="foto/poster-1.jpg" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
@@ -175,7 +176,7 @@
                 </div>
                 <div class="card c-two" style="width: 18rem;">
                     <div class="book">
-                        <img src="foto/poster-2.jpg" style="width: 283px; heigth: 380px; border-radius: 5px;">
+                        <img src="foto/poster-2.jpg" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
@@ -192,7 +193,7 @@
                 </div>
                 <div class="card c-three" style="width: 18rem;">
                     <div class="book">
-                        <img src="foto/poster-3.png" style="width: 283px; heigth: 380px; border-radius: 5px;">
+                        <img src="foto/poster-3.png" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
