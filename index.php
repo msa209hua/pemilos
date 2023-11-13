@@ -89,7 +89,7 @@ button:active:before {
             <td><h1 class="h1">Selamat Datang Di Pemilihan Ketua Osis</h1></td>
         </tr>
     <tr>
-        <td style="padding-bottom: 125px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
+        <td style="padding-bottom: 50px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
     </tr>
     <tr>
         <td><b style="padding-left: 275px;">(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>
