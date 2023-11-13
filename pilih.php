@@ -69,7 +69,7 @@
     
             <div class="main">
                 <div class="card c-one" style="width: 18rem;">
-                    <img src="foto/Capture.PNG" class="card-img-top" alt="...">
+                    <img src="foto/calon_3.PNG" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Number One</h5>
                         <p class="card-text">Fasya-Sahla</p>
@@ -78,16 +78,16 @@
                     </div>
                 </div>
                 <div class="card c-two" style="width: 18rem;">
-                    <img src="foto/Capture.PNG" class="card-img-top" alt="...">
+                    <img src="foto/calon_2.PNG" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Number Two</h5>
-                        <p class="card-text">Endriana-Deni</p>
+                        <p class="card-text">Endriana-Deny</p>
                         <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>2</b></p>
                         <input type="submit" value="VOTE!" name="submit-2" class="btn btn-primary">
                     </div>
                 </div>
                 <div class="card c-three" style="width: 18rem;">
-                    <img src="foto/Capture.PNG" class="card-img-top" alt="...">
+                    <img src="foto/calon_3.PNG" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Number Three</h5>
                         <p class="card-text">Tanszah-Cantika</p>
