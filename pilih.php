@@ -161,7 +161,7 @@
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>OPEN</h5>
-                                <img src="foto/calon_3.PNG" class="card-img-top">
+                                <img src="foto/calon_1.PNG" class="card-img-top">
                             </div>
                         </div>
                     </div>
