@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <style>
-    
+
+body {
+  background-image: url('foto/backgroundhome2.jpg');
+}
 button {
  --color: #0000FF;
  font-family: inherit;
@@ -53,16 +56,51 @@ button:active:before {
  background: #3a0ca3;
  transition: background 0s;
 }
-
-table{}
+.h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+.foot {
+    width: 100%;
+    height: 40px;
+    background-color: deepskyblue;
+    margin-top: 107px;
+        }
+.foot p {
+    padding-top: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+}
 </style>
-<body bgcolor="#00A9FF">
+<body>
+<script src="bootstrap/js/bootstrap.js"></script>
     <center>
-        <table align="center" bgcolor="white" width="70%" height="500px" style="margin-top : 120px; text-align: center; border-radius: 30px;">
+        <table 
+        align="center" 
+        bgcolor="white" 
+        width="70%" 
+        height="500px" 
+        style="margin-top : 120px; 
+        text-align: center; 
+        border-radius: 30px;
+        opacity: 0.88;
+        ">
+        <tr>
+            <td><h1 class="h1">Selamat Datang Di Pemilihan Ketua Osis</h1></td>
+        </tr>
     <tr>
-        <td><a href="pilih.php"><button>Masuk!</button></a></td>
+        <td style="padding-bottom: 50px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
+    </tr>
+    <tr>
+        <td><b style="padding-left: 275px;">(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>
+            <img src="foto/smk.png"  style="padding-left: 125px;" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+            <img src="foto/osis.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+            <img src="foto/kesiswaan.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+        </td>
     </tr>
         </table>
     </center>
+    <div class="foot">
+            <p>lorem &copy; blablabla</p>
+        </div>
 </body>
-</html>

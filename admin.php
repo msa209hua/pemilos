@@ -44,18 +44,8 @@ h6 {color:orange;}
                     <td><?= $row["nama"];?></td>
                     <td><?= $row["kelas"];?></td>
                     <td>
-                        <form action="admin.php" method="POST">
-                            <button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button>
-                            <?php
-                            if (isset($_POST['antri'])) {
-                              $id=$_GET['id'];
-                              if ($id == $row["NIS"]) {
-                                $aksi="Dalam Antrian";
-                              }
-                                
-                            }
-                            ?>
-                        </form>
+                        <a href="proses_admin.php?id=<?=$row['NIS'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
+                    </td>
         </tr>
         <?php endforeach;?>
     </table>
