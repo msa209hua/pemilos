@@ -128,6 +128,7 @@
             height: 40px;
             background-color: deepskyblue;
             margin-top: 70px;
+            font-weight: 700;
         }
 
         .foot p {

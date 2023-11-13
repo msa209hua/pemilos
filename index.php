@@ -65,6 +65,7 @@ button:active:before {
     height: 40px;
     background-color: deepskyblue;
     margin-top: 107px;
+    font-weight: 700;
         }
 .foot p {
     padding-top: 8px;
