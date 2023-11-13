@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 <style>
 
@@ -60,9 +60,20 @@ button:active:before {
     font-family: Georgia, serif;
     font-style: italic;
 }
-table{}
+.foot {
+    width: 100%;
+    height: 40px;
+    background-color: deepskyblue;
+    margin-top: 107px;
+        }
+.foot p {
+    padding-top: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+}
 </style>
 <body>
+<script src="bootstrap/js/bootstrap.js"></script>
     <center>
         <table 
         align="center" 
@@ -85,4 +96,7 @@ table{}
     </tr>
         </table>
     </center>
+    <div class="foot">
+            <p>lorem &copy; blablabla</p>
+        </div>
 </body>
