@@ -92,7 +92,11 @@ button:active:before {
         <td style="padding-bottom: 125px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
     </tr>
     <tr>
-        <td><b>(ikuti kata hatimu karena pilihan ada di kamu!)</b>
+        <td><b style="padding-left: 275px;">(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>
+            <img src="foto/smk.png"  style="padding-left: 125px;" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+            <img src="foto/osis.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+            <img src="foto/kesiswaan.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+        </td>
     </tr>
         </table>
     </center>
