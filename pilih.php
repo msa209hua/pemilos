@@ -209,7 +209,7 @@
             </div>
         </div>
         <div class="foot">
-            <p>lorem &copy; blablabla</p>
+        <p>&copy; 2023 Made By TEFA RPL SMKN 2 CIMAHI😘</p>
         </div>
     </form>
 </body>
