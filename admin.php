@@ -28,6 +28,7 @@ h6 {color:orange;}
 </style>
 <?php
     include "koneksi2.php";
+    $aksi="Antri";
     $sql=mysqli_query($conn, "SELECT * FROM data_siswa");
     ?>
     <table border="1px" collspacing="0" collpadding="15px" width="70%">
@@ -44,9 +45,13 @@ h6 {color:orange;}
                     <td><?= $row["kelas"];?></td>
                     <td>
                         <form action="admin.php" method="POST">
-                            <button type="submit" name="antri"><h6>Antri</h6></button>
+                            <button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button>
                             <?php
                             if (isset($_POST['antri'])) {
+                              $id=$_GET['id'];
+                              if ($id == $row["NIS"]) {
+                                $aksi="Dalam Antrian";
+                              }
                                 
                             }
                             ?>
