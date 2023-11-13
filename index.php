@@ -23,7 +23,7 @@ button {
  z-index: 1;
  font-size: 30px;
  border-radius: 6px;
- font-weight: 500;
+ font-weight: 300;
  color: var(--color);
 }
 
@@ -92,8 +92,8 @@ button:active:before {
         <td style="padding-bottom: 50px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
     </tr>
     <tr>
-        <td><b style="padding-left: 275px;">(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>
-            <img src="foto/smk.png"  style="padding-left: 125px;" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
+        <td><b style="padding-left: 190px;">(ikuti kata hatimu karena pilihan ada di kamu!😘)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="foto/smk.png"  style="padding-left: -50px;" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
             <img src="foto/osis.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
             <img src="foto/kesiswaan.png"  width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="35" cy="35" r="35">
         </td>
