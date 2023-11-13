@@ -4,7 +4,10 @@
 
 </head>
 <style>
-    
+
+body {
+  background-image: url('foto/backgroundhome2.jpg');
+}
 button {
  --color: #0000FF;
  font-family: inherit;
@@ -53,16 +56,33 @@ button:active:before {
  background: #3a0ca3;
  transition: background 0s;
 }
-
+.h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
 table{}
 </style>
-<body bgcolor="#00A9FF">
+<body>
     <center>
-        <table align="center" bgcolor="white" width="70%" height="500px" style="margin-top : 120px; text-align: center; border-radius: 30px;">
+        <table 
+        align="center" 
+        bgcolor="white" 
+        width="70%" 
+        height="500px" 
+        style="margin-top : 120px; 
+        text-align: center; 
+        border-radius: 30px;
+        opacity: 0.88;
+        ">
+        <tr>
+            <td><h1 class="h1">Selamat Datang Di Pemilihan Ketua Osis</h1></td>
+        </tr>
     <tr>
-        <td><a href="pilih.php"><button>Masuk!</button></a></td>
+        <td style="padding-bottom: 125px;"><a href="pilih.php"><button>Pick Your Leader!</button></a></td>
+    </tr>
+    <tr>
+        <td><b>(ikuti kata hatimu karena pilihan ada di kamu!)</b>
     </tr>
         </table>
     </center>
 </body>
-</html>
