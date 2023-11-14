@@ -1,5 +1,6 @@
 <html>
   <head>
+    <center>
     <?php
     include "koneksi.php";
     $sql=mysqli_query($conn, "SELECT * FROM tb_pemilihan");
@@ -33,6 +34,6 @@
   </head>
   <body>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
-    
+    </center>
   </body>
 </html>
