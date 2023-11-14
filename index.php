@@ -62,17 +62,18 @@ button:active:before {
     font-style: italic;
 }
 .foot {
-    width: 100%;
-    height: 40px;
-    background-color: deepskyblue;
-    margin-top: 153px;
-    font-weight: 700;
+            width: 100%;
+            height: 71.5px;
+            background-color: deepskyblue;
+            margin-top: 120px;
+            font-weight: 700;
         }
-.foot p {
-    padding-top: 8px;
-    margin-bottom: 0px;
-    text-align: center;
-}
+
+        .foot p {
+            padding-top: 20.5px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
 </style>
 <body>
 <script src="bootstrap/js/bootstrap.js"></script>
