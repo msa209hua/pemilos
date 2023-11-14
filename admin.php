@@ -50,8 +50,8 @@ h6 {color:orange;}
               <option value="10 MEKATRONIKA B">10 MEKATRONIKA B</option>
               <option value="10 MEKATRONIKA C">10 MEKATRONIKA C</option>
               <option value="10 MEKATRONIKA D">10 MEKATRONIKA D</option>
-              <option value="10 PERMESINAN A">10 PERMESINAN A</option>
-              <option value="10 PERMESINAN B">10 PERMESINAN B</option>
+              <option value="10 PEMESINAN A">10 PEMESINAN A</option>
+              <option value="10 PEMESINAN B">10 PEMESINAN B</option>
               <option value="11 PPLG A">11 PPLG A</option>
               <option value="11 PPLG B">11 PPLG B</option>
               <option value="11 KIMIA A">11 KIMIA A</option>
@@ -66,8 +66,8 @@ h6 {color:orange;}
               <option value="11 MEKATRONIKA B">11 MEKATRONIKA B</option>
               <option value="11 MEKATRONIKA C">11 MEKATRONIKA C</option>
               <option value="11 MEKATRONIKA D">11 MEKATRONIKA D</option>
-              <option value="11 PERMESINAN A">11 PERMESINAN A</option>
-              <option value="11 PERMESINAN B">11 PERMESINAN B</option>
+              <option value="11 PEMESINAN A">11 PEMESINAN A</option>
+              <option value="11 PEMESINAN B">11 PEMESINAN B</option>
             </select>
             </td>
             <td>
