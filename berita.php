@@ -114,7 +114,6 @@
             <td>Nama</td>
             <td>:.......</td>
         </tr>
-        awaaaa
     </table>
 </body>
 </html>
