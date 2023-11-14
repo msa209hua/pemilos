@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Nov 2023 pada 02.08
+-- Waktu pembuatan: 14 Nov 2023 pada 02.17
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
@@ -28,19 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `data_siswa` (
-  `no` int(11) NOT NULL,
   `NIS` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
+  `tingkat` varchar(5) NOT NULL,
+  `jurusan` varchar(25) NOT NULL,
   `kelas` varchar(25) NOT NULL,
   `status` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `data_siswa`
---
-
-INSERT INTO `data_siswa` (`no`, `NIS`, `nama`, `kelas`, `status`) VALUES
-(1, 111111111, 'Figuran A', 'XI RPL A', 'Belum Memilih');
 
 -- --------------------------------------------------------
 
@@ -104,7 +98,7 @@ DELIMITER ;
 -- Indeks untuk tabel `data_siswa`
 --
 ALTER TABLE `data_siswa`
-  ADD PRIMARY KEY (`no`);
+  ADD PRIMARY KEY (`NIS`);
 
 --
 -- Indeks untuk tabel `log_vote`
@@ -121,12 +115,6 @@ ALTER TABLE `tb_pemilihan`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
-
---
--- AUTO_INCREMENT untuk tabel `data_siswa`
---
-ALTER TABLE `data_siswa`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `log_vote`
