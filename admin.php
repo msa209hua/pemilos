@@ -29,7 +29,7 @@ h6 {color:orange;}
 <?php
     include "koneksi.php";
     $aksi="Antri";
-    $sql=mysqli_query($conn, "SELECT * FROM data_siswa");
+    $sql=mysqli_query($conn, "SELECT * FROM siswa");
     ?>
     <table>
     <tr>
@@ -89,13 +89,13 @@ h6 {color:orange;}
         <?php foreach ($sql as $row) : ?>
         <tr align="center">
           <td>1</td>
-                    <td><?= $row["NIS"];?></td>
+                    <td><?= $row["nis"];?></td>
                     <td><?= $row["nama"];?></td>
                     <td><?= $row["tingkat"];?></td>
                     <td><?= $row["jurusan"];?></td>
                     <td><?= $row["kelas"];?></td>
                     <td>
-                        <a href="proses_admin.php?id=<?=$row['NIS'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
+                        <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
                     </td>
         </tr>
         <?php endforeach;?>
