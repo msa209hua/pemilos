@@ -22,7 +22,7 @@
         ]);
 
         var options = {
-          title: 'Presentase'
+          title: 'Hasil Voting Sementara Pemilihan Ketua OSIS dan Wakil Ketua OSIS Tahun Ajaran 2023-2024'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
