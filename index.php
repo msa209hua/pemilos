@@ -65,7 +65,7 @@ button:active:before {
     width: 100%;
     height: 40px;
     background-color: deepskyblue;
-    margin-top: 204px;
+    margin-top: 153px;
     font-weight: 700;
         }
 .foot p {
@@ -82,7 +82,7 @@ button:active:before {
         bgcolor="white" 
         width="70%" 
         height="500px" 
-        style="margin-top : 120px; 
+        style="margin-top : 75px; 
         text-align: center; 
         border-radius: 30px;
         opacity: 0.88;
