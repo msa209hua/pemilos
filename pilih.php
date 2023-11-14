@@ -146,7 +146,10 @@
         <div class="container">
             <div class="head">
                 <div class="col-2 a">
-                    <h4>NOMOR BILIK</h4>
+                    <?php
+                    session_start(); 
+                    ?>
+                    <h4>BILIK <?=$_SESSION['bilik']?></h4>
                 </div>
                 <div class="col-4 b">
                     <h3>CALON KETUA/WAKIL OSIS</h3>
