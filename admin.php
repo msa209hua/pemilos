@@ -36,26 +36,38 @@ h6 {color:orange;}
           <td width="7%">
           <form action="admin.php" method="POST">
             <select name="tingkat">
-              <option value="X">X</option>
-              <option value="XI">XI</option>
-            </select>
-          </td>
-          <td width="10%">
-            <select name="jurusan">
-              <option value="RPL">RPL</option>
-              <option value="KIMIA INDUSTRI">KIMIA INDUSTRI</option>
-              <option value="DKV">DKV</option>
-              <option value="MEKATRONIKA">MEKATRONIKA</option>
-              <option value="ANIMASI">ANIMASI</option>
-              <option value="TEKNIK MESIN">TEKNIK MESIN</option>
-            </select>
-          </td>
-          <td width="5%">
-            <select name="kelas">
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
+              <option value="10 PPLG A">10 PPLG A</option>
+              <option value="10 PPLG B">10 PPLG B</option>
+              <option value="10 KIMIA A">10 KIMIA A</option>
+              <option value="10 KIMIA B">10 KIMIA B</option>
+              <option value="10 KIMIA C">10 KIMIA C</option>
+              <option value="10 ANIMASI A">10 ANIMASI A</option>
+              <option value="10 ANIMASI B">10 ANIMASI B</option>
+              <option value="10 DKV A">10 DKV A</option>
+              <option value="10 DKV B">10 DKV B</option>
+              <option value="10 DKV C">10 DKV C</option>
+              <option value="10 MEKATRONIKA A">10 MEKATRONIKA A</option>
+              <option value="10 MEKATRONIKA B">10 MEKATRONIKA B</option>
+              <option value="10 MEKATRONIKA C">10 MEKATRONIKA C</option>
+              <option value="10 MEKATRONIKA D">10 MEKATRONIKA D</option>
+              <option value="10 PERMESINAN A">10 PERMESINAN A</option>
+              <option value="10 PERMESINAN B">10 PERMESINAN B</option>
+              <option value="11 PPLG A">11 PPLG A</option>
+              <option value="11 PPLG B">11 PPLG B</option>
+              <option value="11 KIMIA A">11 KIMIA A</option>
+              <option value="11 KIMIA B">11 KIMIA B</option>
+              <option value="11 KIMIA C">11 KIMIA C</option>
+              <option value="11 ANIMASI A">11 ANIMASI A</option>
+              <option value="11 ANIMASI B">11 ANIMASI B</option>
+              <option value="11 DKV A">11 DKV A</option>
+              <option value="11 DKV B">11 DKV B</option>
+              <option value="11 DKV C">11 DKV C</option>
+              <option value="11 MEKATRONIKA A">11 MEKATRONIKA A</option>
+              <option value="11 MEKATRONIKA B">11 MEKATRONIKA B</option>
+              <option value="11 MEKATRONIKA C">11 MEKATRONIKA C</option>
+              <option value="11 MEKATRONIKA D">11 MEKATRONIKA D</option>
+              <option value="11 PERMESINAN A">11 PERMESINAN A</option>
+              <option value="11 PERMESINAN B">11 PERMESINAN B</option>
             </select>
             </td>
             <td>
@@ -66,6 +78,7 @@ h6 {color:orange;}
     </table>
     <table border="1px" collspacing="0" collpadding="15px" width="70%">
         <tr>
+          <th>NO</th>
             <th>NIS</th>
             <th>Nama</th>
             <th>Tingkat</th>
@@ -75,6 +88,7 @@ h6 {color:orange;}
         </tr>
         <?php foreach ($sql as $row) : ?>
         <tr align="center">
+          <td>1</td>
                     <td><?= $row["NIS"];?></td>
                     <td><?= $row["nama"];?></td>
                     <td><?= $row["tingkat"];?></td>
