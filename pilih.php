@@ -152,7 +152,7 @@
                     <h4>BILIK <?=$_SESSION['bilik']?></h4>
                 </div>
                 <div class="col-4 b">
-                    <h3>CALON KETUA/WAKIL OSIS</h3>
+                    <h3>CALON KETUA & WAKIL KETUA OSIS SMKN 2 CIMAHI TAHUN AJARAN 2023-2024</h3>
                 </div>
                 <div class="col-2 c">
                     <h4>USERS</h4>
@@ -165,15 +165,13 @@
                         <img src="foto/poster-1.jpg" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
-                                <h5>OPEN</h5>
+                                <h5>Fasya-Sahla</h5>
                                 <img src="foto/calon_1.PNG" class="card-img-top">
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Number One</h5>
-                        <p class="card-text">Fasya-Sahla</p>
-                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>1</b></p>
                         <input type="submit" value="VOTE!" name="submit-1" class="btn btn-primary">
                     </div>
                 </div>
@@ -182,15 +180,13 @@
                         <img src="foto/poster-2.jpg" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
-                                <h5>OPEN</h5>
+                                <h5>Endriana-Deny</h5>
                                 <img src="foto/calon_2.PNG" class="card-img-top">
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Number Two</h5>
-                        <p class="card-text">Endriana-Deny</p>
-                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>2</b></p>
                         <input type="submit" value="VOTE!" name="submit-2" class="btn btn-primary">
                     </div>
                 </div>
@@ -199,15 +195,13 @@
                         <img src="foto/poster-3.png" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
-                                <h5>OPEN</h5>
+                                <h5>Tanszah-Cantika</h5>
                                 <img src="foto/calon_3.PNG" class="card-img-top">
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Number Three</h5>
-                        <p class="card-text">Tanszah-Cantika</p>
-                        <p>Calon Ketua & Wakil Ketua OSIS SMKN 2 Cimahi tahun ajaran 2023/2024 Nomor Urut <b>3</b></p>
                         <input type="submit" value="VOTE!" name="submit-3" class="btn btn-primary">
                     </div>
                 </div>
