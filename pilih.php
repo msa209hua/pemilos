@@ -25,8 +25,8 @@
         .book {
             position: relative;
             border-radius: 5px;
-            width: 287px;
-            height: 380px;
+            width: 283px;
+            height: 370px;
             background-color: whitesmoke;
             -webkit-transform: preserve-3d;
             -ms-transform: preserve-3d;
@@ -126,9 +126,9 @@
 
         .foot {
             width: 100%;
-            height: 40px;
+            height: 47.5px;
             background-color: deepskyblue;
-            margin-top: 70px;
+            margin-top: 1px;
             font-weight: 700;
         }
 
@@ -152,7 +152,7 @@
                     <h4>BILIK <?=$_SESSION['bilik']?></h4>
                 </div>
                 <div class="col-4 b">
-                    <h3>CALON KETUA & WAKIL KETUA OSIS SMKN 2 CIMAHI TAHUN AJARAN 2023-2024</h3>
+                    <h6>CALON KETUA & WAKIL KETUA OSIS SMKN 2 CIMAHI TAHUN AJARAN 2023-2024</h6>
                 </div>
                 <div class="col-2 c">
                     <h4>USERS</h4>
