@@ -26,15 +26,15 @@ tr:nth-child(even) {
 
 h6 {color:orange;}
 </style>
-<?php
-    include "koneksi.php";
-    $aksi="Antri";
-    $sql=mysqli_query($conn, "SELECT * FROM siswa");
+
+    <!-- proses -->
+    <?php
+    
     ?>
     <table>
     <tr>
           <td width="7%">
-          <form action="admin.php" method="POST">
+          <form method="POST">
             <select name="tingkat">
               <option value="10 PPLG A">10 PPLG A</option>
               <option value="10 PPLG B">10 PPLG B</option>
@@ -76,29 +76,41 @@ h6 {color:orange;}
           </form>
         </tr>
     </table>
+    <?php
+    include "koneksi.php";
+    if (isset($_POST['cari'])) {
+      $ting = $_POST['tingkat'];
+      $tingkat = explode(" ",$ting);
+      $angkatan=$tingkat[0];
+      $jurusan=$tingkat[1];
+      $kelas=$tingkat[2];
+      $sql=mysqli_query($conn, "SELECT * FROM siswa WHERE tingkat='$angkatan' and jurusan='$jurusan' and  kelas='$kelas' ORDER BY nis ASC");
+      
+    $aksi="Antri";
+    ?>
     <table border="1px" collspacing="0" collpadding="15px" width="70%">
         <tr>
           <th>NO</th>
-            <th>NIS</th>
-            <th>Nama</th>
-            <th>Tingkat</th>
-            <th>Jurusan</th>
-            <th>Kelas</th>
-            <th>Status</th>
+          <th>NIS</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Status</th>
         </tr>
+        <?php $no = 0;?>
         <?php foreach ($sql as $row) : ?>
         <tr align="center">
-          <td>1</td>
-                    <td><?= $row["nis"];?></td>
-                    <td><?= $row["nama"];?></td>
-                    <td><?= $row["tingkat"];?></td>
-                    <td><?= $row["jurusan"];?></td>
-                    <td><?= $row["kelas"];?></td>
-                    <td>
-                        <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
-                    </td>
+          <td><?php $no += 1; echo $no;?></td>
+          <td><?= $row["nis"];?></td>
+          <td><?= $row["nama"];?></td>
+          <td><?= $row["tingkat"]." ".$row["jurusan"]." ".$row["kelas"];?></td>
+         <td>
+           <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
+        </td>
         </tr>
         <?php endforeach;?>
     </table>
+    <?php
+    }
+    ?>
 </body>
 </html>
