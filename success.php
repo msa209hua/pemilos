@@ -28,6 +28,6 @@ Your browser does not support the audio element.
     <img src="foto/ceklis.gif" width: 1500px; height: 1500px; style="padding-top: 100px; padding-left:225px; "/>
     <h3 style="color: #ffffff">Terima Kasih <br> Telah Berpastisipasi <br> Dalam Pemilihan Ketua Osis dan Wakil Ketua Osis Tahun Ajaran <br> 2023-2024</h3>
     </center>
-    <meta http-equiv="refresh" content="6; URL=http://localhost/pemilos/index.php" />
+    <meta http-equiv="refresh" content="5; URL=http://192.168.40.2/pemilos/index.php" />
 </body>
 </html>

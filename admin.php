@@ -34,7 +34,7 @@ h6 {color:orange;}
     <table>
     <tr>
           <td width="7%">
-          <form method="POST">
+          <form method="GET">
             <select name="tingkat">
               <option value="10 PPLG A">10 PPLG A</option>
               <option value="10 PPLG B">10 PPLG B</option>
@@ -73,20 +73,35 @@ h6 {color:orange;}
             <td>
               <input type="submit" name="cari" value="Cari">
             </td>
-          </form>
+          
         </tr>
     </table>
     <?php
     include "koneksi.php";
-    if (isset($_POST['cari'])) {
-      $ting = $_POST['tingkat'];
+    $aksi="Antri";
+    $limiter = 0;
+    if (isset($_POST[$aksi])) {
+      $nama = $_POST[$id];
+      $aksi = "Dalam Antrian";
+      $limiter++;
+      if ($limiter == 3) {
+        echo "Antrian penuh";
+      }
+    }
+    
+    if (isset($_GET['tingkat'])) {
+      $ting = $_GET['tingkat'];
       $tingkat = explode(" ",$ting);
       $angkatan=$tingkat[0];
       $jurusan=$tingkat[1];
       $kelas=$tingkat[2];
-      $sql=mysqli_query($conn, "SELECT * FROM siswa WHERE tingkat='$angkatan' and jurusan='$jurusan' and  kelas='$kelas' ORDER BY nis ASC");
+      $sql=mysqli_query($conn, "SELECT s.*,a.bilik FROM siswa s
+                                LEFT JOIN tb_antrian a ON s.nis=a.nis 
+                                WHERE s.tingkat='$angkatan' and s.jurusan='$jurusan' and  s.kelas='$kelas' 
+                                ORDER BY s.nis ASC");
       
-    $aksi="Antri";
+      
+      
     ?>
     <table border="1px" collspacing="0" collpadding="15px" width="70%">
         <tr>
@@ -94,6 +109,7 @@ h6 {color:orange;}
           <th>NIS</th>
           <th>Nama</th>
           <th>Kelas</th>
+          <th>Bilik</th>
           <th>Status</th>
         </tr>
         <?php $no = 0;?>
@@ -103,12 +119,29 @@ h6 {color:orange;}
           <td><?= $row["nis"];?></td>
           <td><?= $row["nama"];?></td>
           <td><?= $row["tingkat"]." ".$row["jurusan"]." ".$row["kelas"];?></td>
+          <td><?= $row["bilik"];?></td>
          <td>
-           <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['nis']?>><h6><?= $aksi;?></h6></button></a>
+         <?php
+         if($row["bilik"]!=NULL){
+          $status = "Dalam Antrian";
+         } else {
+          $status = "Antri";
+         }
+          
+         if($row['status']!='Sudah Memilih'){
+          ?>
+         
+         <a href="antrian.php?nis=<?= $row["nis"];?>&kelas=<?= $row["tingkat"]." ".$row["jurusan"]." ".$row["kelas"];?>&status=<?=$status?>"><?php echo $status; ?></a>
+          <?php
+         } else {
+          echo $row['status'];
+         }
+          ?>
         </td>
         </tr>
         <?php endforeach;?>
     </table>
+    </form>
     <?php
     }
     ?>

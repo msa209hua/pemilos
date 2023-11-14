@@ -231,18 +231,28 @@
 
 <body>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <?php
+    include "koneksi.php";
+    $bilik = $_SESSION['bilik'];
+    $sql=mysqli_query($conn, "SELECT s.*,a.bilik FROM siswa s
+                                LEFT JOIN tb_antrian a ON s.nis=a.nis 
+                                WHERE a.bilik=$bilik");
+    ?>
     <form action="proses.php" method="post">
         <div class="container">
             <div class="head">
                 <div class="col-2 a">
                     
-                    <h4>BILIK <?=$_SESSION['bilik']?></h4>
+                    <h4>BILIK <?=$bilik?></h4>
                 </div>
                 <div class="col-4 b">
                     <h6>CALON KETUA & WAKIL KETUA OSIS SMKN 2 CIMAHI TAHUN AJARAN 2023-2024</h6>
                 </div>
                 <div class="col-2 c">
-                    <h4>USERS</h4>
+                <?php foreach ($sql as $row) : ?>
+                    <h4><?= $row["nama"];?></h4>
+                    <input type='hidden' value='<?= $row["nis"];?>' name="nis">
+                    <?php endforeach;?>
                 </div>
             </div>
 
