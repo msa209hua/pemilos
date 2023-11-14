@@ -14,11 +14,7 @@
 <center>
     <h3>BERITA ACARA PELAKSANAAN PEMILIHAN KETUA OSIS</h3>
     <p style="font-size: 18.72px;">Pada hari ini Rabu tanggal 22 bulan November tahun Dua Ribu Dua Puluh Tiga,
-    <br> <ul type="hidden">
-  <li>a. Telah diselenggarakan Pemilihan Ketua Osis Angkatan 16 Tahun Pelajaran 2023/2024 pada </li>
-  <li>Paul Cézanne</li>
-  <li>Claude Monet</li>
-</ul></p>
+    <br> 
 </center>
 </body>
 </html>
