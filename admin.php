@@ -104,7 +104,7 @@ h6 {color:orange;}
           <td><?= $row["nama"];?></td>
           <td><?= $row["tingkat"]." ".$row["jurusan"]." ".$row["kelas"];?></td>
          <td>
-           <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['NIS']?>><h6><?= $aksi;?></h6></button></a>
+           <a href="proses_admin.php?id=<?=$row['nis'];?>"><button type="submit" name="antri" id=<?= $row['nis']?>><h6><?= $aksi;?></h6></button></a>
         </td>
         </tr>
         <?php endforeach;?>
