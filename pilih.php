@@ -168,7 +168,7 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 30%;
   max-width: 700px;
 }
 
