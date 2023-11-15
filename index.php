@@ -101,5 +101,5 @@ button:active:before {
     </tr>
         </table>
     </center>
-    <div class="footer"><h6 style="padding-top: 25px;">&copy; 2023 Made By TEFA RPL SMKN 2 CIMAHI😘</h6></div>
+    <div class="footer"><p style="padding-top: 25px;">&copy; 2023 Made By TEFA RPL SMKN 2 CIMAHI😘</p></div>
 </body>
