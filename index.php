@@ -61,19 +61,17 @@ button:active:before {
     font-family: Georgia, serif;
     font-style: italic;
 }
-.foot {
-            width: 100%;
-            height: 71.5px;
-            background-color: deepskyblue;
-            margin-top: 120px;
-            font-weight: 700;
-        }
-
-        .foot p {
-            padding-top: 20.5px;
-            margin-bottom: 0px;
-            text-align: center;
-        }
+.footer { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    background-color: deepskyblue;
+    width: 100%;
+    text-align: center;
+    font-weight:700;
+    height: 71.5px;
+}
 </style>
 <body>
 <script src="bootstrap/js/bootstrap.js"></script>
@@ -103,7 +101,5 @@ button:active:before {
     </tr>
         </table>
     </center>
-    <div class="foot">
-    <p>&copy; 2023 Made By TEFA RPL SMKN 2 CIMAHI😘</p>
-        </div>
+    <div class="footer"><h6 style="padding-top: 25px;">&copy; 2023 Made By TEFA RPL SMKN 2 CIMAHI😘</h6></div>
 </body>
