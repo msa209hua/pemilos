@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Nov 2023 pada 04.31
+-- Waktu pembuatan: 15 Nov 2023 pada 04.25
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
@@ -1203,6 +1203,17 @@ INSERT INTO `siswa` (`nis`, `nama`, `tingkat`, `jurusan`, `kelas`, `jenis_kelami
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `tb_antrian`
+--
+
+CREATE TABLE `tb_antrian` (
+  `nis` int(11) NOT NULL,
+  `bilik` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `tb_pemilihan`
 --
 
@@ -1243,6 +1254,12 @@ ALTER TABLE `log_vote`
 -- Indeks untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
+  ADD PRIMARY KEY (`nis`);
+
+--
+-- Indeks untuk tabel `tb_antrian`
+--
+ALTER TABLE `tb_antrian`
   ADD PRIMARY KEY (`nis`);
 
 --
