@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Nov 2023 pada 04.25
+-- Waktu pembuatan: 15 Nov 2023 pada 04.41
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
@@ -1208,7 +1208,8 @@ INSERT INTO `siswa` (`nis`, `nama`, `tingkat`, `jurusan`, `kelas`, `jenis_kelami
 
 CREATE TABLE `tb_antrian` (
   `nis` int(11) NOT NULL,
-  `bilik` varchar(25) NOT NULL
+  `bilik` varchar(25) NOT NULL,
+  `status` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
