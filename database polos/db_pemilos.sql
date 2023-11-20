@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2023 at 05:39 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Waktu pembuatan: 20 Nov 2023 pada 09.34
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hasil_pemilihan`
+-- Struktur dari tabel `hasil_pemilihan`
 --
 
 CREATE TABLE `hasil_pemilihan` (
@@ -33,19 +33,10 @@ CREATE TABLE `hasil_pemilihan` (
   `waktu` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `hasil_pemilihan`
---
-
-INSERT INTO `hasil_pemilihan` (`nis`, `vote`, `waktu`) VALUES
-(102306366, '2', '2023-11-15 11:34:05'),
-(102306367, '1', '2023-11-15 11:33:55'),
-(102306368, '2', '2023-11-15 11:33:56');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `log_vote`
+-- Struktur dari tabel `log_vote`
 --
 
 CREATE TABLE `log_vote` (
@@ -54,19 +45,10 @@ CREATE TABLE `log_vote` (
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `log_vote`
---
-
-INSERT INTO `log_vote` (`id_log_vote`, `value`, `date_add`) VALUES
-(22, 'Fasya-Sahla', '2023-11-15 11:38:16'),
-(23, 'Endriana-Deni', '2023-11-15 11:38:16'),
-(24, 'Tanszah-Cantika', '2023-11-15 11:38:16');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siswa`
+-- Struktur dari tabel `siswa`
 --
 
 CREATE TABLE `siswa` (
@@ -80,7 +62,7 @@ CREATE TABLE `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data untuk tabel `siswa`
 --
 
 INSERT INTO `siswa` (`nis`, `nama`, `tingkat`, `jurusan`, `kelas`, `jenis_kelamin`, `status`) VALUES
@@ -1220,7 +1202,7 @@ INSERT INTO `siswa` (`nis`, `nama`, `tingkat`, `jurusan`, `kelas`, `jenis_kelami
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_antrian`
+-- Struktur dari tabel `tb_antrian`
 --
 
 CREATE TABLE `tb_antrian` (
@@ -1231,7 +1213,7 @@ CREATE TABLE `tb_antrian` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pemilihan`
+-- Struktur dari tabel `tb_pemilihan`
 --
 
 CREATE TABLE `tb_pemilihan` (
@@ -1241,7 +1223,7 @@ CREATE TABLE `tb_pemilihan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tb_pemilihan`
+-- Dumping data untuk tabel `tb_pemilihan`
 --
 
 INSERT INTO `tb_pemilihan` (`no`, `calon_kewatos`, `hasil_vote`) VALUES
@@ -1250,7 +1232,7 @@ INSERT INTO `tb_pemilihan` (`no`, `calon_kewatos`, `hasil_vote`) VALUES
 (3, 'Tanszah-Cantika', 0);
 
 --
--- Triggers `tb_pemilihan`
+-- Trigger `tb_pemilihan`
 --
 DELIMITER $$
 CREATE TRIGGER `tr_log_vote` AFTER UPDATE ON `tb_pemilihan` FOR EACH ROW INSERT INTO log_vote (value, date_add) VALUES (old.calon_kewatos, now())
@@ -1262,41 +1244,41 @@ DELIMITER ;
 --
 
 --
--- Indexes for table `hasil_pemilihan`
+-- Indeks untuk tabel `hasil_pemilihan`
 --
 ALTER TABLE `hasil_pemilihan`
   ADD PRIMARY KEY (`nis`);
 
 --
--- Indexes for table `log_vote`
+-- Indeks untuk tabel `log_vote`
 --
 ALTER TABLE `log_vote`
   ADD PRIMARY KEY (`id_log_vote`);
 
 --
--- Indexes for table `siswa`
+-- Indeks untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`nis`);
 
 --
--- Indexes for table `tb_antrian`
+-- Indeks untuk tabel `tb_antrian`
 --
 ALTER TABLE `tb_antrian`
   ADD PRIMARY KEY (`nis`);
 
 --
--- Indexes for table `tb_pemilihan`
+-- Indeks untuk tabel `tb_pemilihan`
 --
 ALTER TABLE `tb_pemilihan`
   ADD PRIMARY KEY (`no`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `log_vote`
+-- AUTO_INCREMENT untuk tabel `log_vote`
 --
 ALTER TABLE `log_vote`
   MODIFY `id_log_vote` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
