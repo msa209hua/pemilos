@@ -35,5 +35,6 @@
   <body>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
     </center>
+    <meta http-equiv="refresh" content="600; URL=http://localhost/pemilos/presentase.php" />
   </body>
 </html>
