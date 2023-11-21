@@ -145,5 +145,7 @@ h6 {color:orange;}
     <?php
     }
     ?>
+    <br>
+    <a href="berita.php" onclick="window.open(this.href).print(); return false"><button>HASIL</button></a>
 </body>
 </html>

@@ -7,7 +7,7 @@ $sqlSuara3= mysqli_query($conn, "SELECT hasil_vote FROM tb_pemilihan WHERE no='3
 ?>
 <html>
 <head>
-<title>Bikin Kop Surat</title>
+<title></title>
 </head>
 <body>
 <table width="100%">
@@ -112,7 +112,5 @@ $sqlSuara3= mysqli_query($conn, "SELECT hasil_vote FROM tb_pemilihan WHERE no='3
             <th align="left">Deva Naufal <br> NIS. 102105668</th>
         </tr>
     </table>
-
-    <h3 align="right"><button onclick="window.print()">Print this page</button></h3>
 </body>
 </html>

@@ -36,5 +36,6 @@
     <div id="piechart" style="width: 900px; height: 500px;"></div>
     </center>
     <meta http-equiv="refresh" content="600; URL=http://localhost/pemilos/rev/presentase.php" />
+    <a href="berita.php" onclick="window.open(this.href).print(); return false"><button>HASIL</button></a>
   </body>
 </html>
