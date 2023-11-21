@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php";
+$sqlJumlah= mysqli_query($conn, "SELECT SUM(hasil_vote) AS total_vote FROM tb_pemilihan");
+$sqlSuara1= mysqli_query($conn, "SELECT hasil_vote FROM tb_pemilihan WHERE no='1'");
+$sqlSuara2= mysqli_query($conn, "SELECT hasil_vote FROM tb_pemilihan WHERE no='2'");
+$sqlSuara3= mysqli_query($conn, "SELECT hasil_vote FROM tb_pemilihan WHERE no='3'");
+?>
 <html>
 <head>
 <title>Bikin Kop Surat</title>
@@ -16,9 +23,6 @@
 </tr>
 </table>
 <hr>
-<center>
-    <h3>BERITA ACARA PELAKSANAAN PEMILIHAN KETUA OSIS</h3>
-</center>
 <p>Pada hari ini Rabu tanggal 22 bulan November tahun Dua Ribu Dua Puluh Tiga,</p>
     <table>
         <tr>
@@ -40,7 +44,7 @@
         <tr>
             <td></td>
             <td>Lokasi</td>
-            <td>: SMK 2 Negeri Cimahi</td>
+            <td>: SMK Negeri 2 Cimahi</td>
         </tr>
         <tr>
             <td></td>
@@ -50,12 +54,12 @@
         <tr>
             <td></td>
             <td>Jumlah Pemilihan Hadir</td>
-            <td>:</td>
+            <td>: <?php foreach ($sqlJumlah as $total) :?><?=$total["total_vote"]; ?><?php endforeach;?> Siswa</td>
         </tr>
         <tr>
             <td></td>
             <td>Jumlah Pemilihan Tidak Hadir</td>
-            <td>:</td>
+            <td>: <?php foreach ($sqlJumlah as $total) :?><?= $total_hadir=1131-$total["total_vote"]; ?><?php endforeach;?> Siswa</td>
         </tr>
         <tr>
             <td>b.</td>
@@ -64,17 +68,17 @@
         <tr>
             <td></td>
             <td>1.Suara Calon 1 (divisi nama calon)</td>
-            <td>:......Suara</td>
+            <td>: <?php foreach ($sqlSuara1 as $total) :?><?=$total["hasil_vote"]; ?><?php endforeach;?> Suara</td>
         </tr>
         <tr>
             <td></td>
             <td>2.Suara Calon 2 (divisi nama calon)</td>
-            <td>:......Suara</td>
+            <td>: <?php foreach ($sqlSuara2 as $total) :?><?=$total["hasil_vote"]; ?><?php endforeach;?> Suara</td>
         </tr>
         <tr>
             <td></td>
             <td>3.Suara Calon 3 (divisi nama calon)</td>
-            <td>:......Suara</td>
+            <td>: <?php foreach ($sqlSuara3 as $total) :?><?=$total["hasil_vote"]; ?><?php endforeach;?> Suara</td>
         </tr>
         <tr>
             <td>c.</td>
