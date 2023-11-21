@@ -261,7 +261,7 @@
                         <div id="caption"></div>
                         </div>
                     <div class="book">
-                    <img id="myImg"src="foto/poster-1.jpg" style="width: 283px; height: 378px; border-radius: 5px;">
+                    <img id="myImg"src="foto/poster-1.png" style="width: 283px; height: 378px; border-radius: 5px;">
                         <div class="cover">
                             <div class="p-cover">
                                 <h5>Fasya-Sahla</h5>
